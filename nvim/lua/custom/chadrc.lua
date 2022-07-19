@@ -11,7 +11,16 @@ M.ui = {
 
 M.plugins = {
    user = require "custom.plugins", -- add new plugins
-   override = {}, -- override core plugins
+   override = {
+      ["kyazdani42/nvim-tree.lua"] = {
+         actions = {
+            open_file = {
+               resize_window = true,
+               quit_on_open = true,
+            }
+         }
+      }
+   }, -- override core plugins
    options = {
       lspconfig = {
          setup_lspconf = "custom.plugins.lspconfig"
