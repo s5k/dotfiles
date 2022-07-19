@@ -10,7 +10,10 @@ M.ui = {
 }
 
 M.plugins = {
-   user = require "custom.plugins", -- add new plugins
+   -- add new plugins
+   user = require "custom.plugins",
+
+   -- override core plugins
    override = {
       ["kyazdani42/nvim-tree.lua"] = {
          actions = {
@@ -20,7 +23,7 @@ M.plugins = {
             }
          }
       }
-   }, -- override core plugins
+   },
    options = {
       lspconfig = {
          setup_lspconf = "custom.plugins.lspconfig"
