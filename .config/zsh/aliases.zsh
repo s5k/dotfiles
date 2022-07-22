@@ -9,9 +9,15 @@ if [[ $OSTYPE =~ "darwin" ]]; then
   alias abrew="/opt/homebrew/bin/brew"
 fi
 
+# replace ls with Exa plugin
 if [[ $(which exa) ]]; then
   alias ls="exa"
   alias l="exa -lah"
+fi
+
+# replace cd with plugin autojump Zoxide
+if [[ $(which z) ]]; then
+   alias cd="z"
 fi
 
 alias gs="git status"

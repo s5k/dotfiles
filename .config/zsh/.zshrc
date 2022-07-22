@@ -22,5 +22,8 @@ source $DOTFILES/zsh/key_bindings.zsh --source_only
 
 init
 
+eval "$(zoxide init zsh)"
+export _ZO_ECHO='1'
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source /usr/share/nvm/init-nvm.sh
