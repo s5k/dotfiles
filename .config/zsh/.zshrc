@@ -1,3 +1,5 @@
+# ~/.zshrc
+
 export DOTFILES="$HOME/.config"
 export ZSH_DISABLE_COMPFIX="true"
 export ZSH="$HOME/.oh-my-zsh"
