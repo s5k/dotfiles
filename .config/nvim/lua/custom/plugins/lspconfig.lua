@@ -10,7 +10,7 @@ M.setup_lsp = function (attach, capabilities)
       lspconfig[lsp].setup {
          on_attach = function (client, bufnr)
             attach(client, bufnr)
-            -- config lspconfig 
+            -- disable Lsp formart code to use Null-ls (Formart and diagnosis plugin)
             client.resolved_capabilities.document_formatting = false
          end,
          capabilities = capabilities,
