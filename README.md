@@ -1,6 +1,6 @@
 ## Introduces
 
-![Workspace](images/zsh_kitty.png "Workspace")
+![Workspace](images/workspace.png "Workspace")
 
 ## Requirements
 
