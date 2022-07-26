@@ -19,16 +19,26 @@ M.plugins = {
          actions = {
             open_file = {
                resize_window = true,
-               quit_on_open = true,
             }
          }
-      }
+      },
+      ["williamboman/mason.nvim"] = {
+        ensure_installed = {
+          -- lua stuff
+          "lua-language-server",
+
+          -- web dev
+          "css-lsp",
+          "html-lsp",
+          "typescript-language-server",
+          "json-lsp",
+
+          -- shell
+          "shfmt",
+          "shellcheck",
+        },
+      },
    },
-   options = {
-      lspconfig = {
-         setup_lspconf = "custom.plugins.lspconfig"
-      }
-   },
-}
+ }
 
 return M
