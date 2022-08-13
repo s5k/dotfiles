@@ -4,4 +4,7 @@ keysym h = h H Left
 keysym l = l L Right
 keysym k = k K Up
 keysym j = j J Down
-! TODO: Need to remap backtick
+
+! Remap backtick (`) and tilde (~) to Caps + ; (~) / Caps + ' (`)
+keysym U0027 = U0027 U0022 U0060
+keysym U003B = U003B U003A U007E
