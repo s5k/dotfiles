@@ -8,3 +8,23 @@ keysym j = j J Down
 ! Remap backtick (`) and tilde (~) to Caps + ; (~) / Caps + ' (`)
 keysym U0027 = U0027 U0022 U0060
 keysym U003B = U003B U003A U007E
+
+! Remap Revese solidus (\) to Caps + /
+keysym U002F = U002F U003F U005C
+
+! Remap Backspace to []
+keysym bracketleft = BackSpace
+keysym bracketright = BackSpace
+
+! Remap +=-_ to Caps + uiop
+keysym u = u U plus
+keysym i = i I equal
+keysym o = o O minus 
+keysym p = p P underscore
+
+! Remap {}[]| to qewr
+keysym q = q Q braceleft
+keysym w = w W braceright
+keysym e = e E bracketleft
+keysym r = r R bracketright
+keysym t = t T bar
