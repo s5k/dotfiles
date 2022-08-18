@@ -1,3 +1,9 @@
+! Remap Backspace -= \ to 0
+keycode 22 = 
+keycode 20 = 
+keycode 21 = 
+keycode 51 = 
+
 ! Remap arrow keys to Caps + HJKL
 keycode 66 = Mode_switch
 keysym h = h H Left
@@ -28,3 +34,4 @@ keysym w = w W braceright
 keysym e = e E bracketleft
 keysym r = r R bracketright
 keysym t = t T bar
+
