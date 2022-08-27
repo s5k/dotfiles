@@ -1,12 +1,8 @@
-require "core"
-require "core.options"
+require('craftzdog.base')
+require('craftzdog.highlights')
+require('craftzdog.maps')
+require('craftzdog.plugins')
 
-vim.defer_fn(function()
-  require("core.utils").load_mappings()
-end, 0)
-
--- setup packer + plugins
-require("core.packer").bootstrap()
-require "plugins"
-
-pcall(require, "custom")
+vim.cmd [[
+  set clipboard^=unnamed,unnamedplus
+]]

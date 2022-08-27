@@ -20,6 +20,10 @@ if [[ $(which z) ]]; then
    alias cd="z"
 fi
 
+if [[ $(which tmux) ]]; then
+   alias tmux="tmux -u"
+fi
+
 alias gs="git status"
 alias ga="git add"
 alias gcm="git commit -m"
