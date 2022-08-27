@@ -1,6 +1,6 @@
 # ~/.zshrc
 
-export DOTFILES="$HOME/.config"
+export DOTFILES="$HOME/Documents/Ours/dotfiles/.config/zsh"
 export ZSH_DISABLE_COMPFIX="true"
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -12,13 +12,13 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-source $DOTFILES/zsh/env.zsh --source_only
-source $DOTFILES/zsh/utils.zsh --source_only
-source $DOTFILES/zsh/paths.zsh --source_only
-source $DOTFILES/zsh/init.zsh --source_only
-source $DOTFILES/zsh/aliases.zsh --source_only
-source $DOTFILES/zsh/hooks.zsh --source_only
-source $DOTFILES/zsh/key_bindings.zsh --source_only
+source $DOTFILES/env.zsh --source_only
+source $DOTFILES/utils.zsh --source_only
+source $DOTFILES/paths.zsh --source_only
+source $DOTFILES/init.zsh --source_only
+source $DOTFILES/aliases.zsh --source_only
+source $DOTFILES/hooks.zsh --source_only
+source $DOTFILES/key_bindings.zsh --source_only
 
 init
 
