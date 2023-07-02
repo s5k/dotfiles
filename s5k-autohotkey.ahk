@@ -51,9 +51,9 @@ CapsLock & '::Send "{U+0060}"
 CapsLock & /::Send "\"
 
 ; { [, ] } = { BackSpace }
-[::1
-]::2
-1::Send "{BS}"
-2::Send "{BS}"
+[::Numpad0
+]::Numpad1
+Numpad0::Send "{BS}"
+Numpad1::Send "{BS}"
 
 Return
