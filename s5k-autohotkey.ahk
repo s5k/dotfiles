@@ -56,4 +56,9 @@ CapsLock & /::Send "\"
 Numpad0::Send "{BS}"
 Numpad1::Send "{BS}"
 
-Return
+; Remap minus, euqal, backspace, backslash to disable key
+Numpad3::Send ""
+-::Numpad3
+=::Numpad3
+BackSpace::Numpad3
+\::Numpad3
