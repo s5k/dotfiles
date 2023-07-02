@@ -62,3 +62,5 @@ Numpad3::Send ""
 =::Numpad3
 BackSpace::Numpad3
 \::Numpad3
+
+Return
