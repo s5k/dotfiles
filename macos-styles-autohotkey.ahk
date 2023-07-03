@@ -42,8 +42,8 @@ $!+t::Send "^+t"
 $!+]::Send "{Ctrl Down}{Tab Down}{Tab Up}{Ctrl Up}"
 $!+[::Send "{Ctrl Down}{Shift Down}{Tab Down}{Tab Up}{Shift Up}{Ctrl Up}"
 $!l::Send "^l"
-; Chrome opens link to a new tab
-!LButton up::Send "{Ctrl Down}{LButton}"
+; Chrome open to new tab
+!LButton up::Send "{Ctrl Down}{LButton}{Ctrl Up}"
 
 ; input methods"
 
