@@ -46,7 +46,6 @@
     "key": "o",
     "when": "filesExplorerFocus && !inputFocus"
   },
-
   {
     "command": "renameFile",
     "key": "r",
