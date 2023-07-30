@@ -57,10 +57,6 @@
       "commands": ["editor.action.rename"]
     },
     {
-      "before": ["<leader>", "k"],
-      "commands": ["editor.action.showHover"]
-    },
-    {
       "before": ["g", "e"],
       "commands": ["editor.action.marker.next"]
     },
