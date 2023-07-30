@@ -23,3 +23,4 @@ In very early stages but will likely keep updating this script as I use it and f
 - GitHub Theme (Default theme)
 - Vim
 - Prettier
+- Eslint
