@@ -1,10 +1,10 @@
 {
   "workbench.colorTheme": "GitHub Dark Default",
   "workbench.sideBar.location": "right",
-  "editor.fontFamily": "JetBrains Mono",
   "git.enableSmartCommit": true,
 
   //editor settings
+  "editor.fontFamily": "JetBrains Mono",
   "editor.inlineSuggest.enabled": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.stickyScroll.enabled": true,
@@ -32,7 +32,7 @@
   //typescript settings
   "typescript.preferences.importModuleSpecifier": "non-relative",
 
-  // vim settings
+  //vim settings
   "vim.easymotion": true,
   "vim.foldfix": true,
   "vim.incsearch": true,
@@ -90,6 +90,7 @@
     "<C-c>": false
   },
   //end vim
+
   "github.copilot.enable": {
     "*": true,
     "plaintext": true,
