@@ -37,6 +37,11 @@
     "when": "editorTextFocus"
   },
   {
+    "command": "list.find",
+    "key": "/",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
     "command": "filesExplorer.findInFolder",
     "key": "f",
     "when": "filesExplorerFocus && !inputFocus"
@@ -44,7 +49,12 @@
   {
     "command": "filesExplorer.openFilePreserveFocus",
     "key": "o",
-    "when": "filesExplorerFocus && !inputFocus"
+    "when": "filesExplorerFocus && !foldersViewVisible && !inputFocus"
+  },
+  {
+    "command": "explorer.openAndPassFocus",
+    "key": "o",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
   },
   {
     "command": "renameFile",
