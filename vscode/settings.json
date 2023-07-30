@@ -57,6 +57,10 @@
       "commands": ["editor.action.rename"]
     },
     {
+      "before": ["g", "h"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    },
+    {
       "before": ["g", "e"],
       "commands": ["editor.action.marker.next"]
     },
