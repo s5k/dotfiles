@@ -57,6 +57,7 @@
       "commands": ["editor.action.rename"]
     },
     {
+      // move to the next occurrence of the current word
       "before": ["<leader>", "f"],
       "commands": ["editor.action.wordHighlight.next"]
     },
