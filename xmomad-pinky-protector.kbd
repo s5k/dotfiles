@@ -39,6 +39,7 @@
 (defalias
   cap (layer-toggle s5k)
   aliasalt (layer-toggle alt)
+  aliasalt2 (layer-toggle alt2)
 )
 
 (deflayer U_BASE
@@ -62,5 +63,13 @@
   C-tab _    _    _    _    _    _    C-u  _    _    _    _    _    _
   _     _    _    C-d    _    _    _    _    _    _    _    _    _
   _     _    _    _    C-c  _    _    _    _    _    _    _    _
+  _     _    @aliasalt2              _              _    _    _    _
+)
+
+(deflayer alt2
+  _     C-A-1    C-A-2    C-A-3  _    _    _    _    _    _    _    _    _    _
+  _     _    _    _    _    _    _    _    _    _    _    _    _    _
+  _     _    _    _    _    _    _    _    _    _    _    _    _
+  _     _    _    _    _    _    _    _    _    _    _    _    _
   _     _    _              _              _    _    _    _
 )
