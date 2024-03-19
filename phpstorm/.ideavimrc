@@ -1,0 +1,62 @@
+" .ideavimrc is a configuration file for ideavim plugin. it uses
+"   the same commands as the original .vimrc configuration.
+" you can find a list of commands here: https://jb.gg/h38q75
+" find more examples here: https://jb.gg/share-ideavimrc
+
+" sync system clipboard
+set clipboard+=unnamed
+
+set ignorecase
+set smartcase
+
+" hybrid line numbers
+set number relativenumber
+set nu rnu
+
+let mapleader = " "
+
+"" -- suggested options --
+" show a few lines of context around the cursor. note that this makes the
+" text scroll if you mouse-click near the start or end of the window.
+set scrolloff=5
+
+" do incremental searching.
+set incsearch
+
+" don't use ex mode, use q for formatting.
+map q gq
+
+" --- enable ideavim plugins https://jb.gg/ideavim-plugins
+
+" highlight copied text
+plug 'machakann/vim-highlightedyank'
+" commentary plugin
+plug 'tpope/vim-commentary'
+" nerd tree
+plug 'preservim/nerdtree'
+
+" quick escape
+imap jk <esc>
+
+nmap qf :action showintentionactions<cr>
+nnoremap ge :action gotonexterror<cr>
+nnoremap gh :action showerrordescription<cr>
+
+" remap variable
+nnoremap <leader>r :action renameelement<cr>
+
+" toggle explorer
+nmap <c-e> :nerdtree<cr>
+
+" close current file
+map <c-w> :action closeeditor<cr>
+
+"" -- map ide actions to ideavim -- https://jb.gg/abva4t
+"" map \r to the reformat code action
+"map \r <action>(reformatcode)
+
+"" map <leader>d to start debug
+"map <leader>d <action>(debug)
+
+"" map \b to toggle the breakpoint on the current line
+"map \b <action>(togglelinebreakpoint)
