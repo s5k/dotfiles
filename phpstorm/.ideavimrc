@@ -30,10 +30,14 @@ map <c-s-c> :action CopyReference<CR>
 " allow use ctrl+v to paste inline search
 cnoremap <c-v> <c-r>+
 
+" Remap go to the top of explorer
+let g:NERDTreeMapJumpRoot = 'gg'
+
 " --- Plugins ---
 Plug 'machakann/vim-highlightedyank'
 Plug 'tpope/vim-commentary'
 Plug 'preservim/nerdtree'
+
 
 " --- IDE Actions ---
 " map \r to the reformat code action
