@@ -15,13 +15,13 @@ set incsearch
 set hlsearch
 
 " --- Key Mappings ---
-imap jk <esc>
-nmap qf :action ShowIntentionActions<CR>
+map <c-w> :action CloseEditor<CR>
+inoremap jk <esc>
+nnoremap qf :action ShowIntentionActions<CR>
 nnoremap ge :action GotoNextError<CR>
 nnoremap gh :action ShowHoverInfo<CR>
 nnoremap <leader>r :action RenameElement<CR>
-nmap <c-e> :NERDTreeFind<CR>
-map <c-w> :action CloseEditor<CR>
+nnoremap <c-e> :NERDTreeFind<CR>
 nnoremap <leader>f :action GotoNextElementUnderCaretUsage<CR>
 
 " copy class namespace by press ctrl+shift+c
