@@ -24,32 +24,33 @@ set scrolloff=5
 set incsearch
 
 " don't use ex mode, use q for formatting.
-map q gq
+" map q gq
 
 " --- enable ideavim plugins https://jb.gg/ideavim-plugins
 
 " highlight copied text
-plug 'machakann/vim-highlightedyank'
+Plug 'machakann/vim-highlightedyank'
 " commentary plugin
-plug 'tpope/vim-commentary'
+Plug 'tpope/vim-commentary'
 " nerd tree
-plug 'preservim/nerdtree'
+Plug 'preservim/nerdtree'
 
 " quick escape
 imap jk <esc>
 
-nmap qf :action showintentionactions<cr>
-nnoremap ge :action gotonexterror<cr>
-nnoremap gh :action showerrordescription<cr>
+nmap qf :action ShowIntentionActions<CR>
+nnoremap ge :action GotoNextError<CR>
+nnoremap gh :action ShowHoverInfo<CR>
+" "gqq" for quick formatting
 
 " remap variable
-nnoremap <leader>r :action renameelement<cr>
+nnoremap <leader>r :action RenameElement<CR>
 
-" toggle explorer
-nmap <c-e> :nerdtree<cr>
+" toggle explorer with current buffer (if the buffer's outside project, it'll not toggle ROFL)
+nmap <c-e> :NERDTreeFind<CR>
 
 " close current file
-map <c-w> :action closeeditor<cr>
+map <c-w> :action CloseEditor<CR>
 
 "" -- map ide actions to ideavim -- https://jb.gg/abva4t
 "" map \r to the reformat code action
