@@ -12,6 +12,7 @@ set number relativenumber
 set nu rnu
 set scrolloff=5
 set incsearch
+set hlsearch
 
 " --- Key Mappings ---
 imap jk <esc>
@@ -21,7 +22,12 @@ nnoremap gh :action ShowHoverInfo<CR>
 nnoremap <leader>r :action RenameElement<CR>
 nmap <c-e> :NERDTreeFind<CR>
 map <c-w> :action CloseEditor<CR>
+
+" copy class namespace by press ctrl+shift+c
 map <c-s-c> :action CopyReference<CR>
+
+" allow use ctrl+v to paste inline search
+cnoremap <c-v> <c-r>+
 
 " --- Plugins ---
 Plug 'machakann/vim-highlightedyank'
