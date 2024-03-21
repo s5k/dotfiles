@@ -5,7 +5,7 @@
 
 " --- Basic Settings ---
 let mapleader = " "
-set clipboard+=unnamed
+set clipboard+=unnamedplus
 set ignorecase
 set smartcase
 set number relativenumber
@@ -21,7 +21,7 @@ nnoremap gh :action ShowHoverInfo<CR>
 nnoremap <leader>r :action RenameElement<CR>
 nmap <c-e> :NERDTreeFind<CR>
 map <c-w> :action CloseEditor<CR>
-" "gqq" for code formatting
+map <c-s-c> :action CopyReference<CR>
 
 " --- Plugins ---
 Plug 'machakann/vim-highlightedyank'
