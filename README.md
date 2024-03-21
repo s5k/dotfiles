@@ -24,3 +24,9 @@ In very early stages but will likely keep updating this script as I use it and f
 - Vim
 - Prettier
 - Eslint
+
+### PHPStorm Extensions
+- Inspection Lens
+- IdeaVim
+- Magento PhpStorm
+- Copilot
