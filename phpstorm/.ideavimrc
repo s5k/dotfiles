@@ -1,63 +1,34 @@
-" .ideavimrc is a configuration file for ideavim plugin. it uses
-"   the same commands as the original .vimrc configuration.
-" you can find a list of commands here: https://jb.gg/h38q75
-" find more examples here: https://jb.gg/share-ideavimrc
+" .ideavimrc is a configuration file for ideavim plugin. It uses
+" the same commands as the original .vimrc configuration.
+" You can find a list of commands here: https://jb.gg/h38q75
+" Find more examples here: https://jb.gg/share-ideavimrc
 
-" sync system clipboard
+" --- Basic Settings ---
+let mapleader = " "
 set clipboard+=unnamed
-
 set ignorecase
 set smartcase
-
-" hybrid line numbers
 set number relativenumber
 set nu rnu
-
-let mapleader = " "
-
-"" -- suggested options --
-" show a few lines of context around the cursor. note that this makes the
-" text scroll if you mouse-click near the start or end of the window.
 set scrolloff=5
-
-" do incremental searching.
 set incsearch
 
-" don't use ex mode, use q for formatting.
-" map q gq
-
-" --- enable ideavim plugins https://jb.gg/ideavim-plugins
-
-" highlight copied text
-Plug 'machakann/vim-highlightedyank'
-" commentary plugin
-Plug 'tpope/vim-commentary'
-" nerd tree
-Plug 'preservim/nerdtree'
-
-" quick escape
+" --- Key Mappings ---
 imap jk <esc>
-
 nmap qf :action ShowIntentionActions<CR>
 nnoremap ge :action GotoNextError<CR>
 nnoremap gh :action ShowHoverInfo<CR>
-" "gqq" for quick formatting
-
-" remap variable
 nnoremap <leader>r :action RenameElement<CR>
-
-" toggle explorer with current buffer (if the buffer's outside project, it'll not toggle ROFL)
 nmap <c-e> :NERDTreeFind<CR>
-
-" close current file
 map <c-w> :action CloseEditor<CR>
+" "gqq" for code formatting
 
-"" -- map ide actions to ideavim -- https://jb.gg/abva4t
-"" map \r to the reformat code action
-"map \r <action>(reformatcode)
+" --- Plugins ---
+Plug 'machakann/vim-highlightedyank'
+Plug 'tpope/vim-commentary'
+Plug 'preservim/nerdtree'
 
-"" map <leader>d to start debug
-"map <leader>d <action>(debug)
-
-"" map \b to toggle the breakpoint on the current line
-"map \b <action>(togglelinebreakpoint)
+" --- IDE Actions ---
+" map \r to the reformat code action
+" map <leader>d to start debug
+" map \b to toggle the breakpoint on the current line
