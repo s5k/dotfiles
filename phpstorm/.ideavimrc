@@ -22,6 +22,7 @@ nnoremap gh :action ShowHoverInfo<CR>
 nnoremap <leader>r :action RenameElement<CR>
 nmap <c-e> :NERDTreeFind<CR>
 map <c-w> :action CloseEditor<CR>
+nnoremap <leader>f :action GotoNextElementUnderCaretUsage<CR>
 
 " copy class namespace by press ctrl+shift+c
 map <c-s-c> :action CopyReference<CR>
